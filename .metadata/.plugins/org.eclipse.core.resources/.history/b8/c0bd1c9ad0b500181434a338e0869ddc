@@ -1,0 +1,20 @@
+package com.bayviewglen.daythree;
+
+public class ExampleThree {
+	
+	/* Integer Division */
+	public static void main(String[] args) {
+		int x = 345;
+		int y = 17;
+				
+		double z = x / y;
+		
+		System.out.println(z);
+		
+		int remainder = x % y;  //modulus operator gets us the remainder
+		
+		System.out.println("The remainder is : " + remainder);
+		
+	}
+
+}

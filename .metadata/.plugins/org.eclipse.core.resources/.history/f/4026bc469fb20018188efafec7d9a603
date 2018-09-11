@@ -1,0 +1,20 @@
+package com.bayviewglen.dayone;
+
+public class ExampleOne {
+
+	public static void main(String[] args) {
+		//Question 1
+		System.out.println("            A                         A        ");
+		System.out.println("          A   A                     A   A      ");
+		System.out.println("         A     A                   A     A     ");
+		System.out.println("        AAAAAAAAA                 AAAAAAAAA    ");
+		System.out.println("       A         A               A         A   ");
+		System.out.println("      A           A             A           A  ");
+		System.out.println("     A             A           A             A ");
+		
+		//Question 2
+		System.out.println("         ________             ");
+		System.out.println("        /         \\            ");
+	}
+
+}

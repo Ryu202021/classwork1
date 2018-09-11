@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\rhui1\ICS Workspaces\Classwork\.metadata\.plugins\org.eclipse.jdt.core
+2329657974.index
+3423253026.index
+2603447019.index
