@@ -11,7 +11,7 @@ public class ExampleThree {
 		
 		//int y = x / 0;
 		
-		System.out.println(y);
+		//System.out.println(y);
 		
 		// Logic Errors
 		int radius = 7;
