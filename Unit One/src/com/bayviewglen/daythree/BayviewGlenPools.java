@@ -26,7 +26,7 @@ public class BayviewGlenPools {
 		double deepEndSA = deepEndWall + deepEndBase + deepEndSides;
 		
 		double transitionBase = (TRANSITION_HYP * POOL_LENGTH);
-		double transitionSides = ;
+		double transitionSides = (SH_END_H * TRANSITION_LENGTH) + ((DE_END_H - SH_END_H) * TRANSITION_LENGTH) / 2;
 		double transitionSA = transitionBase + (transitionSides * 2);
 		
 		double totalSA = shallowEndSA + deepEndSA + transitionSA;
@@ -41,7 +41,6 @@ public class BayviewGlenPools {
 		double h = POOL_WIDTH;
 		double volumeOfPool = POOL_LENGTH * POOL_WIDTH * DE_END_H;
 		
-		double minusTriPrism = 1 / 4 * h (Math.sqrt(-1 * a + 2 * (Math.pow(a * b, 2)) + 2 * (Math.pow(a * c, 2)) - (Math.pow(b, 4)) + 2 * (Math.pow(b * c, 2)) - Math.pow(c, 4)));
 		
 		System.out.println("1. The pool length is " + POOL_LENGTH + "m.");
 		System.out.println("2. The depth of the shallow end is " + SH_END_H + "m and the depth of the deep end is "
