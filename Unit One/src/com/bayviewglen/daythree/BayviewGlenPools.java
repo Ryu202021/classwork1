@@ -9,16 +9,16 @@ public class BayviewGlenPools {
 		final double DE_END_H = 6;
 		final double DE_END_L = 20;
 		final double TRANSITION_LENGTH = 15;
-		final double SH_END_L = POOL_LENGTH - (Math.sqrt(DE_END_L + TRANSITION_LENGTH));
+		final double SH_END_L = POOL_LENGTH - ((Math.sqrt((Math.pow(TRANSITION_LENGTH, 2)) - (Math.pow(DE_END_H, 2)))) + DE_END_L);
 		
 	 
-		double shallowEndBase = (SH_END_H * POOL_WIDTH);
-		double shallowEndSides = (SH_END_L * SH_END_H);
-		double shallowEndWall = (SH_END_L * POOL_WIDTH);
+		double shallowEndBase = SH_END_H * POOL_WIDTH;
+		double shallowEndSides = SH_END_L * SH_END_H;
+		double shallowEndWall = SH_END_L * POOL_WIDTH;
 		double shallowEndSA = shallowEndBase + (shallowEndSides * 2) + shallowEndWall;
 		
-		double deepEndWall = (DE_END_H * POOL_WIDTH);
-		double deepEndBase = (DE_END_L * POOL_WIDTH);
+		double deepEndWall = DE_END_H * POOL_WIDTH;
+		double deepEndBase = DE_END_L * POOL_WIDTH;
 		double deepEndSides = (2 * (DE_END_L * DE_END_H));
 		double deepEndSA = deepEndWall + deepEndBase + deepEndSides;
 		
