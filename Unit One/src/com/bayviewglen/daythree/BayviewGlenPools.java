@@ -51,7 +51,7 @@ public class BayviewGlenPools {
 		System.out.println("1. The pool length is " + POOL_LENGTH + "m.");
 		System.out.println("2. The depth of the shallow end is " + SH_END_H + "m and the depth of the deep end is "
 				+ DE_END_H + "m.");
-		System.out.println("3. The length of transition between the shallow end and the deep end is " + TRANSITION_LENGTH + " .");
+		System.out.println("3. The slope between the shallow end and the deep end is " + TRANSITION_HYP + "m.");
 		System.out.println("4. The length of the shallow end is " + SH_END_L + "m.");
 		System.out.println("5. The price of the liner is $60/m^2. ");
 		
