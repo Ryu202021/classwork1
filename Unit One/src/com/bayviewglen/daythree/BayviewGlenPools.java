@@ -41,6 +41,12 @@ public class BayviewGlenPools {
 		double h = POOL_WIDTH;
 		double volumeOfPool = POOL_LENGTH * POOL_WIDTH * DE_END_H;
 		
+		double minusTriPrism = 1 / 4 * h * (Math.sqrt(-1 * a + 2 * (Math.pow(a * b, 2)) + 2 * (Math.pow(a * c, 2)) - (Math.pow(b, 4)) + 2 * (Math.pow(b * c, 2)) - Math.pow(c, 4)));
+		double minusRecPrism = POOL_WIDTH * (DE_END_H - SH_END_H) * (POOL_LENGTH - TRANSITION_LENGTH);
+
+        double poolVolume = (POOL_LENGTH * POOL_WIDTH * DE_END_H) - (minusTriPrism + minusRecPrism);
+        double poolNinety = poolVolume * 0.9;
+		
 		
 		System.out.println("1. The pool length is " + POOL_LENGTH + "m.");
 		System.out.println("2. The depth of the shallow end is " + SH_END_H + "m and the depth of the deep end is "
@@ -49,7 +55,7 @@ public class BayviewGlenPools {
 		System.out.println("4. The length of the shallow end is " + SH_END_L + "m.");
 		System.out.println("5. The price of the liner is $60/m^2. ");
 		
-		System.out.println("1. The amount of water needed to fill the pool 90% is " + " of water.");
+		System.out.println("1. The amount of water needed to fill the pool 90% is " + poolNinety + "m^3 of water.");
 		System.out.println("2. The amount of liner needed is " + totalSA + "m^2.");
 		System.out.println("3. The price for the entire pool's liner $" + (int)linerTotalCost + "." + (int)linerCents + ".");
 		
