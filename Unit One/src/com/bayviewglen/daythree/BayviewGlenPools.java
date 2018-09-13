@@ -55,6 +55,9 @@ public class BayviewGlenPools {
 		System.out.println("4. The length of the shallow end is " + SH_END_L + "m.");
 		System.out.println("5. The price of the liner is $60/m^2. ");
 		
+		System.out.println("");
+		System.out.println("Next Questions 1 - 3.");
+		
 		System.out.println("1. The amount of water needed to fill the pool 90% is " + poolNinety + "m^3 of water.");
 		System.out.println("2. The amount of liner needed is " + totalSA + "m^2.");
 		System.out.println("3. The price for the entire pool's liner $" + (int)linerTotalCost + "." + (int)linerCents + ".");
