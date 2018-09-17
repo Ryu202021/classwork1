@@ -1,8 +1,11 @@
 package com.bayviewglen.dayfive;
 
+import java.util.Scanner;
+
 public class DayFiveReview {
 
 	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
 		double price = 985.0;
 		double HST = 5.5;
 
@@ -58,9 +61,14 @@ public class DayFiveReview {
 		
 		System.out.println("7. If the temperature is " + F + " degrees Farenheit, the temperature in Celcius is " + C + " degrees Celcius.");
 		
-		int number = 4;
+		System.out.print("8. Please enter a POSITIVE number: ");
+		double number = in.nextDouble();
 		double nsquare = Math.pow(number, 2);
 		double nsqrt = Math.sqrt(nsquare);
+		
+		if (number < 0) {
+			System.out.println("Enter a POSITIVE number");
+		}
 		
 		System.out.println("8a. If the number is " + number + ", the number squared is " + nsquare + ".");
 		System.out.println("8b. If the number is " + number + "and the square root of the number is " + nsqrt + ".");
@@ -86,6 +94,8 @@ public class DayFiveReview {
 		double KE = (1.0 / 2.0) * m * (Math.pow(v, 2));
 		
 		System.out.println("11. The Kinetic Energy (KE) of the object is " + KE + ".");
+		
+		in.close();
 		
 		 
 	}
