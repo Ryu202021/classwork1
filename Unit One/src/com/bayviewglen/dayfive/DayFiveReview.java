@@ -67,7 +67,7 @@ public class DayFiveReview {
 		double nsqrt = Math.sqrt(nsquare);
 
 		if (number < 0) {
-			System.out.println("Enter a POSITIVE number");
+			System.out.println("Enter a POSITIVE number please");
 		}
 
 		System.out.println("8a. If the number is " + number + ", the number squared is " + nsquare + ".");
