@@ -1,8 +1,0 @@
-package com.bayviewglen.daythree;
-
-public class ExampleThree {
-	
-	/* Integer Division */
-	public static void main(String[] args) {
-		
-}
