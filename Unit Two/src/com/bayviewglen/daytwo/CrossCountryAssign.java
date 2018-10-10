@@ -11,7 +11,7 @@ public class CrossCountryAssign {
 		String name1 = in.nextLine();
 		System.out.print("Mile One time (mm:ss.sss): ");
 		String R1splitOne = in.nextLine();
-		System.out.print("Mile Two time (mm:ss.sss): ");
+		System.out.print("Time to end of Mile Two (mm:ss.sss): ");
 		String R1splitTwo = in.nextLine();
 		System.out.print("Total Time (mm:ss.sss):    ");
 		String R1totalTime = in.nextLine();
@@ -29,6 +29,9 @@ public class CrossCountryAssign {
 		int R1splitTwoColon = R1splitTwo.indexOf(":");
 		R1splitTwoMinutes = Integer.parseInt(R1splitTwo.substring(0 , R1splitTwoColon));
 		R1splitTwoSeconds = Double.parseDouble(R1splitTwo.substring(R1splitTwoColon+1));
+		
+		R1splitTwoMinutes = R1splitTwoMinutes - R1splitOneMinutes;
+		R1splitTwoSeconds = R1splitTwoSeconds - R1splitOneSeconds;
 		
 		int R1totalTimeMinutes;
 		double R1totalTimeSeconds;
@@ -60,21 +63,23 @@ public class CrossCountryAssign {
 		}
 		
 		System.out.println();
-		
 		System.out.println("******************************************");
 		System.out.println();
 		System.out.println("Runner One");
 		System.out.println();
-		System.out.printf("Name: %23s\n" , name1);
-		System.out.printf("Split 1: %20s\n" , R1splitOne);
-		System.out.printf("Split 2: %20s\n" , R1splitTwo);
-		System.out.printf("Split 3: %13d:%.3f\n" , R1splitThreeMinutes , R1splitThreeSeconds);
-		System.out.printf("Total Time: %17s\n" , R1totalTime);
-		
+		System.out.printf("%-20s%20s\n" , "Name: ", name1);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R1splitOneMinutes , R1splitOneSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R1splitTwoMinutes , R1splitTwoSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R1splitThreeMinutes , R1splitThreeSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Total Time: " , R1totalTimeMinutes , R1totalTimeSeconds);
+		System.out.printf("");
 		System.out.println();
 		System.out.println("******************************************");
 		System.out.println();
 		
+		
+		System.out.printf("%-20s%-20s%-20s%-20s%-20s\n" , "Name" , "Split 1" , "Split 2" , "Split 3" , "Total Time");
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , name1 , R1splitOneMinutes , R1splitOneSeconds , R1splitTwoMinutes , R1splitTwoSeconds , R1splitThreeMinutes , R1splitThreeSeconds , R1totalTimeMinutes , R1totalTimeSeconds);
 		in.close();
 	}
 
