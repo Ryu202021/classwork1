@@ -2,17 +2,35 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="R1" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="mileTwo" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="Mile2"/>
+			<item value="name1"/>
+			<item value="Name1"/>
+			<item value="R1"/>
+			<item value="name"/>
 			<item value="ELSE"/>
 			<item value="mileOneseconds"/>
 			<item value="package com.bayviewglen.daythree;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="mileTwo"/>
+			<item value="name2"/>
+			<item value="Name2"/>
+			<item value="R2"/>
+			<item value="Name3"/>
+			<item value="name3"/>
+			<item value="R3"/>
+			<item value="Name4"/>
+			<item value="name4"/>
+			<item value="name5"/>
+			<item value="R4"/>
+			<item value="Name5"/>
+			<item value="R5"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

@@ -7,7 +7,8 @@ public class CrossCountryAssign2 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		System.out.print("First and Last name:       ");
+
+		System.out.print("First and Last name: ");
 		String name1 = in.nextLine();
 		System.out.print("Mile One time (mm:ss.sss): ");
 		String R1splitOne = in.nextLine();
@@ -15,6 +16,11 @@ public class CrossCountryAssign2 {
 		String R1splitTwo = in.nextLine();
 		System.out.print("Total Time (mm:ss.sss):    ");
 		String R1totalTime = in.nextLine();
+		
+		int name1Space = name1.indexOf(" ");
+		String lname1 = name1.substring(name1Space+1);
+		String fname1 = name1.substring(0, name1Space);
+		String finalName1 = lname1 + ", " + fname1;
 		
 		int R1splitOneMinutes;
 		double R1splitOneSeconds;
@@ -67,7 +73,7 @@ public class CrossCountryAssign2 {
 		System.out.println();
 		System.out.println("Runner One");
 		System.out.println();
-		System.out.printf("%-20s%20s\n" , "Name: ", name1);
+		System.out.printf("%-20s%20s\n" , "Name: ", finalName1);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R1splitOneMinutes , R1splitOneSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R1splitTwoMinutes , R1splitTwoSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R1splitThreeMinutes , R1splitThreeSeconds);
@@ -76,8 +82,8 @@ public class CrossCountryAssign2 {
 		System.out.println();
 		System.out.println("******************************************");
 		System.out.println();
-		
-		System.out.print("First and Last name:       ");
+
+		System.out.print("First and Last name: ");
 		String name2 = in.nextLine();
 		System.out.print("Mile One time (mm:ss.sss): ");
 		String R2splitOne = in.nextLine();
@@ -85,6 +91,11 @@ public class CrossCountryAssign2 {
 		String R2splitTwo = in.nextLine();
 		System.out.print("Total Time (mm:ss.sss):    ");
 		String R2totalTime = in.nextLine();
+		
+		int name2Space = name2.indexOf(" ");
+		String lname2 = name2.substring(name2Space+1);
+		String fname2 = name2.substring(0, name2Space);
+		String finalName2 = lname2 + ", " + fname2;
 		
 		int R2splitOneMinutes;
 		double R2splitOneSeconds;
@@ -137,7 +148,7 @@ public class CrossCountryAssign2 {
 		System.out.println();
 		System.out.println("Runner Two");
 		System.out.println();
-		System.out.printf("%-20s%20s\n" , "Name: ", name2);
+		System.out.printf("%-20s%20s\n" , "Name: ", finalName2);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R2splitOneMinutes , R2splitOneSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R2splitTwoMinutes , R2splitTwoSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R2splitThreeMinutes , R2splitThreeSeconds);
@@ -155,6 +166,11 @@ public class CrossCountryAssign2 {
 		String R3splitTwo = in.nextLine();
 		System.out.print("Total Time (mm:ss.sss):    ");
 		String R3totalTime = in.nextLine();
+		
+		int name3Space = name3.indexOf(" ");
+		String lname3 = name3.substring(name3Space+1);
+		String fname3 = name3.substring(0, name3Space);
+		String finalName3 = lname3 + ", " + fname3;
 		
 		int R3splitOneMinutes;
 		double R3splitOneSeconds;
@@ -207,7 +223,7 @@ public class CrossCountryAssign2 {
 		System.out.println();
 		System.out.println("Runner Three");
 		System.out.println();
-		System.out.printf("%-20s%20s\n" , "Name: ", name3);
+		System.out.printf("%-20s%20s\n" , "Name: ", finalName3);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R3splitOneMinutes , R3splitOneSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R3splitTwoMinutes , R3splitTwoSeconds);
 		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R3splitThreeMinutes , R3splitThreeSeconds);
@@ -217,11 +233,164 @@ public class CrossCountryAssign2 {
 		System.out.println("******************************************");
 		System.out.println();
 		
-		System.out.printf("%-20s%-20s%-20s%-20s%-20s\n" , "Name" , "Split 1" , "Split 2" , "Split 3" , "Total Time");
-		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , name1 , R1splitOneMinutes , R1splitOneSeconds , R1splitTwoMinutes , R1splitTwoSeconds , R1splitThreeMinutes , R1splitThreeSeconds , R1totalTimeMinutes , R1totalTimeSeconds);
-		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , name2 , R2splitOneMinutes , R2splitOneSeconds , R2splitTwoMinutes , R2splitTwoSeconds , R2splitThreeMinutes , R2splitThreeSeconds , R2totalTimeMinutes , R2totalTimeSeconds);
-		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , name3 , R3splitOneMinutes , R3splitOneSeconds , R3splitTwoMinutes , R3splitTwoSeconds , R3splitThreeMinutes , R3splitThreeSeconds , R3totalTimeMinutes , R3totalTimeSeconds);
+		System.out.print("First and Last name: ");
+		String name4 = in.nextLine();
+		System.out.print("Mile One time (mm:ss.sss): ");
+		String R4splitOne = in.nextLine();
+		System.out.print("Time to end of Mile Two (mm:ss.sss): ");
+		String R4splitTwo = in.nextLine();
+		System.out.print("Total Time (mm:ss.sss): ");
+		String R4totalTime = in.nextLine();
 		
+		int name4Space = name4.indexOf(" ");
+		String lname4 = name4.substring(name4Space+1);
+		String fname4 = name4.substring(0, name4Space);
+		String finalName4 = lname4 + ", " + fname4;
+		
+		int R4splitOneMinutes;
+		double R4splitOneSeconds;
+		
+		int R4splitOneColon = R4splitOne.indexOf(":");
+		R4splitOneMinutes = Integer.parseInt(R4splitOne.substring(0 , R4splitOneColon));
+		R4splitOneSeconds = Double.parseDouble(R4splitOne.substring(R4splitOneColon+1));
+		
+		int R4splitTwoMinutes;
+		double R4splitTwoSeconds;
+		
+		int R4splitTwoColon = R4splitTwo.indexOf(":");
+		R4splitTwoMinutes = Integer.parseInt(R4splitTwo.substring(0 , R4splitTwoColon));
+		R4splitTwoSeconds = Double.parseDouble(R4splitTwo.substring(R4splitTwoColon+1));
+		
+		R4splitTwoMinutes = R4splitTwoMinutes - R4splitOneMinutes;
+		R4splitTwoSeconds = R4splitTwoSeconds - R4splitOneSeconds;
+		
+		int R4totalTimeMinutes;
+		double R4totalTimeSeconds;
+		
+		int R4totalTimeColon = R4totalTime.indexOf(":");
+		R4totalTimeMinutes = Integer.parseInt(R4totalTime.substring(0 , R4totalTimeColon));
+		R4totalTimeSeconds = Double.parseDouble(R4totalTime.substring(R4totalTimeColon+1));
+		
+		int R4splitThreeMinutes;
+		double R4splitThreeSeconds;
+		
+		R4splitThreeMinutes = R4totalTimeMinutes - (R4splitOneMinutes + R4splitTwoMinutes);
+		R4splitThreeSeconds = R4totalTimeSeconds - (R4splitOneSeconds + R4splitTwoSeconds);
+		
+		if (R4splitThreeSeconds > 60) { //Too many seconds adding to minutes
+			int R4splitThreeExcessSeconds = (int) ((R4splitThreeSeconds - 60) / 60);
+			R4splitThreeSeconds = R4splitThreeExcessSeconds - R4splitThreeSeconds;
+			R4splitThreeMinutes = (int) (R4splitThreeMinutes + R4splitThreeExcessSeconds);
+		}
+		else if (R4splitThreeMinutes < 0) { //Minutes is less than 0 so subtracting from seconds
+			int R4splitThreeExtraSeconds = R4splitThreeMinutes * (-60);
+			R4splitThreeMinutes = 0;
+			R4splitThreeSeconds = R4splitThreeSeconds + R4splitThreeExtraSeconds;
+		}
+		else if (R4splitThreeSeconds < 0) { //Seconds is less than 0 so subtracting from minutes
+			int R4splitThreeExtraMinutes = (int) R4splitThreeSeconds / (-60);
+			R4splitThreeMinutes = R4splitThreeMinutes + R4splitThreeExtraMinutes;
+			R4splitThreeSeconds = R4splitThreeSeconds + (int) (-1) * R4splitThreeSeconds;
+		}
+		
+		System.out.println();
+		System.out.println("******************************************");
+		System.out.println();
+		System.out.println("Runner Four");
+		System.out.println();
+		System.out.printf("%-20s%20s\n" , "Name: ", finalName4);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R4splitOneMinutes , R4splitOneSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R4splitTwoMinutes , R4splitTwoSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R4splitThreeMinutes , R4splitThreeSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Total Time: " , R4totalTimeMinutes , R4totalTimeSeconds);
+		System.out.printf("");
+		System.out.println();
+		System.out.println("******************************************");
+		System.out.println();
+		
+		
+
+		System.out.print("First and Last name: ");
+		String name5 = in.nextLine();
+		System.out.print("Mile One time (mm:ss.sss): ");
+		String R5splitOne = in.nextLine();
+		System.out.print("Time to end of Mile Two (mm:ss.sss): ");
+		String R5splitTwo = in.nextLine();
+		System.out.print("Total Time (mm:ss.sss):    ");
+		String R5totalTime = in.nextLine();
+		
+		int name5Space = name5.indexOf(" ");
+		String lname5 = name5.substring(name5Space+1);
+		String fname5 = name5.substring(0, name5Space);
+		String finalName5 = lname5 + ", " + fname5;
+		
+		int R5splitOneMinutes;
+		double R5splitOneSeconds;
+		
+		int R5splitOneColon = R5splitOne.indexOf(":");
+		R5splitOneMinutes = Integer.parseInt(R5splitOne.substring(0 , R5splitOneColon));
+		R5splitOneSeconds = Double.parseDouble(R5splitOne.substring(R5splitOneColon+1));
+		
+		int R5splitTwoMinutes;
+		double R5splitTwoSeconds;
+		
+		int R5splitTwoColon = R5splitTwo.indexOf(":");
+		R5splitTwoMinutes = Integer.parseInt(R5splitTwo.substring(0 , R5splitTwoColon));
+		R5splitTwoSeconds = Double.parseDouble(R5splitTwo.substring(R5splitTwoColon+1));
+		
+		R5splitTwoMinutes = R5splitTwoMinutes - R5splitOneMinutes;
+		R5splitTwoSeconds = R5splitTwoSeconds - R5splitOneSeconds;
+		
+		int R5totalTimeMinutes;
+		double R5totalTimeSeconds;
+		
+		int R5totalTimeColon = R5totalTime.indexOf(":");
+		R5totalTimeMinutes = Integer.parseInt(R5totalTime.substring(0 , R5totalTimeColon));
+		R5totalTimeSeconds = Double.parseDouble(R5totalTime.substring(R5totalTimeColon+1));
+		
+		int R5splitThreeMinutes;
+		double R5splitThreeSeconds;
+		
+		R5splitThreeMinutes = R5totalTimeMinutes - (R5splitOneMinutes + R5splitTwoMinutes);
+		R5splitThreeSeconds = R5totalTimeSeconds - (R5splitOneSeconds + R5splitTwoSeconds);
+		
+		if (R5splitThreeSeconds > 60) { //Too many seconds adding to minutes
+			int R5splitThreeExcessSeconds = (int) ((R5splitThreeSeconds - 60) / 60);
+			R5splitThreeSeconds = R5splitThreeExcessSeconds - R5splitThreeSeconds;
+			R5splitThreeMinutes = (int) (R5splitThreeMinutes + R5splitThreeExcessSeconds);
+		}
+		else if (R5splitThreeMinutes < 0) { //Minutes is less than 0 so subtracting from seconds
+			int R5splitThreeExtraSeconds = R5splitThreeMinutes * (-60);
+			R5splitThreeMinutes = 0;
+			R5splitThreeSeconds = R5splitThreeSeconds + R5splitThreeExtraSeconds;
+		}
+		else if (R5splitThreeSeconds < 0) { //Seconds is less than 0 so subtracting from minutes
+			int R5splitThreeExtraMinutes = (int) R5splitThreeSeconds / (-60);
+			R5splitThreeMinutes = R5splitThreeMinutes + R5splitThreeExtraMinutes;
+			R5splitThreeSeconds = R5splitThreeSeconds + (int) (-1) * R5splitThreeSeconds;
+		}
+		
+		System.out.println();
+		System.out.println("******************************************");
+		System.out.println();
+		System.out.println("Runner Five");
+		System.out.println();
+		System.out.printf("%-20s%20s\n" , "Name: ", finalName5);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 1: ", R5splitOneMinutes , R5splitOneSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 2: ", R5splitTwoMinutes , R5splitTwoSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Split 3:" , R5splitThreeMinutes , R5splitThreeSeconds);
+		System.out.printf("%-20s%13d:%06.3f\n" , "Total Time: " , R5totalTimeMinutes , R5totalTimeSeconds);
+		System.out.printf("");
+		System.out.println();
+		System.out.println("******************************************");
+		System.out.println();
+		
+		System.out.printf("%-20s%-20s%-20s%-20s%-20s\n" , "Name" , "Split 1" , "Split 2" , "Split 3" , "Total Time");
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , finalName1 , R1splitOneMinutes , R1splitOneSeconds , R1splitTwoMinutes , R1splitTwoSeconds , R1splitThreeMinutes , R1splitThreeSeconds , R1totalTimeMinutes , R1totalTimeSeconds);
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , finalName2 , R2splitOneMinutes , R2splitOneSeconds , R2splitTwoMinutes , R2splitTwoSeconds , R2splitThreeMinutes , R2splitThreeSeconds , R2totalTimeMinutes , R2totalTimeSeconds);
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , finalName3 , R3splitOneMinutes , R3splitOneSeconds , R3splitTwoMinutes , R3splitTwoSeconds , R3splitThreeMinutes , R3splitThreeSeconds , R3totalTimeMinutes , R3totalTimeSeconds);
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , finalName4 , R4splitOneMinutes , R4splitOneSeconds , R4splitTwoMinutes , R4splitTwoSeconds , R4splitThreeMinutes , R4splitThreeSeconds , R4totalTimeMinutes , R4totalTimeSeconds);
+		System.out.printf("%-20s%d:%06.3f%13d:%06.3f%13d:%06.3f%13d:%06.3f\n" , finalName5 , R5splitOneMinutes , R5splitOneSeconds , R5splitTwoMinutes , R5splitTwoSeconds , R5splitThreeMinutes , R5splitThreeSeconds , R5totalTimeMinutes , R5totalTimeSeconds);
 		in.close();
 	}
 
