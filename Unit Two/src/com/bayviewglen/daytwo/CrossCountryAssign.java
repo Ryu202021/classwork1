@@ -7,20 +7,21 @@ public class CrossCountryAssign {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		
-		System.out.print("First and Last name:       ");
+		System.out.print("First and Last name: ");
 		String name1 = in.nextLine();
-		System.out.print("Mile One time (mm:ss.sss): ");
-		String R1splitOne = in.nextLine();
-		System.out.print("Time to end of Mile Two (mm:ss.sss): ");
-		String R1mileTwo = in.nextLine();
-		System.out.print("Total Time (mm:ss.sss):    ");
-		String R1totalTime = in.nextLine();
 		
 		int name1Space = name1.indexOf(" ");
 		String lname1 = name1.substring(name1Space+1);
 		String fname1 = name1.substring(0, name1Space);
 		String finalName1 = lname1 + ", " + fname1;
 		
+		System.out.print(fname1 + "please enter mile one time (mm:ss.sss): ");
+		String R1splitOne = in.nextLine();
+		System.out.print(fname1 + "please enter time to end of Mile Two (mm:ss.sss): ");
+		String R1mileTwo = in.nextLine();
+		System.out.print(fname1 + "please enter the total time (mm:ss.sss): ");
+		String R1totalTime = in.nextLine();
+				
 		int R1splitOneMinutes;
 		double R1splitOneSeconds;
 		
